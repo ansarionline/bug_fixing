@@ -8,6 +8,7 @@ async def main():
         nonlocal counter
         counter += 1
         label.text = f'Counter: {counter}'
+        ui.notify('Clicked',position='center')
 
     label = ui.label(f'Counter: {counter}')
     ui.button('Increment', on_click=increment)
